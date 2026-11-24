@@ -222,12 +222,14 @@ Each mob maps to either a **fixed amount** or a **random range**:
 Special keys:
 
 ```js
-default: [1, 3],   // payout for mobs NOT listed (0 = pay nothing, null = only listed mobs pay)
-exclude: [         // never pay, even via default
+default: null,     // whitelist mode: ONLY listed mobs pay (unlisted = nothing, safety default)
+exclude: [         // never pay, even if a catch-all default is configured
   "minecraft:player",
   "minecraft:armor_stand"
 ]
 ```
+
+> **Whitelist-only by design:** unlisted entities — including mobs added by other addons — pay nothing until you add them to the table, so new content can never silently farm money.
 
 Other money behavior switches (`earnMoneyfromMobs`, `notifyEarnMoneyInChat`, `maxMoney`, `starterMoney`, `currencyPrefix`) stay in `Configuration.js`.
 
