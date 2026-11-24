@@ -1,0 +1,11 @@
+{
+	/* Header label override so the pocket container header shows the stripped
+	   target name instead of the raw projector nameTag. */
+
+	"namespace": "pocket_containers",
+
+	"header_area/container_header": {
+		"$new_custom_name|default": "$container_title",
+		"$header_label": "$new_custom_name"
+	}
+}

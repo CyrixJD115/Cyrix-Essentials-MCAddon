@@ -1,0 +1,6 @@
+{
+	"ui_defs": [
+		"ui/mce_ui.json",
+		"ui/invsee/inventory_viewer.json"
+	]
+}

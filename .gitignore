@@ -1,0 +1,19 @@
+# Build outputs
+*.mcaddon
+*.mcpack
+backups/
+
+# Local reference material (third-party addons, server scans) - never publish
+.ref/
+omnibedrock_all_entities.md
+furralis-craft-mobs-entities-*.md
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
